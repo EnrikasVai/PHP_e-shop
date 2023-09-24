@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+/* header- navigacija */
+header, main, footer{
+    border: 1px solid black;
+}
+header{
+    display: flex;
+    background-color: black;
+    height: 125px;
+
+}
+.pavadinimas{
+    height: 100%;
+    width:300px;
+    flex-grow: 0;
+    text-align: center;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav{
+    height: 100%;
+    min-width:400px;
+    flex-grow: 1000;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.krepselis{
+    height: 100%;
+    width:400px;
+    flex-grow: 0;
+    display:inline-block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.krepselis img{
+    width: 50px;
+}
+nav ul li{
+    display: inline;
+    padding-right: 15px;
+    font-size: 25px;
+}
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+nav ul li:hover{
+    color: red;
+} 
+.krepselis img:hover{
+    width: 70px;
+}
+.pavadinimas img{
+    width: 100px;
+}
+.kas:not(:hover){
+    color: red;
+}
+/* main'as */
+main{
+    display: flex;
+    background-image: url("15457.jpg");
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    height: 725px;
+
+}
+.preke{
+    min-width: 1200px;
+    min-height: 650px;
+    box-shadow: 0 10px 50px rgba(7, 7, 7, 0.4);
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    
+}
+.fotke{
+    width: 500px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotke img{
+    width: 250px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+.informacija{
+    min-height: 650px;
+    height: 100%;
+    min-width:400px;
+    flex-grow: 1000;
+    color: white;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 40px;
+    background-color: rgb(27, 27, 27);
+}
+.informacija h2{
+    margin-top: 100px;
+}
+.informacija p{
+    text-align: justify;
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*spalva*/
+.kontentas{
+    background-color: bisque;
+}
+/* mygtukas atgal*/
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 200px;
+    background:#ff0000c2;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    font-weight:700;
+    margin-bottom: 10px;
+  }
+.pirk [type="submit"] {
+    background: rgb(0, 0, 0);
+}
+.pirk [type="submit"]:hover  {
+    background: rgb(6, 233, 55);
+}
+  [type="submit"]:hover { background:#ff0000; }
+
+  @media screen and (max-width: 760px) {
+
+    header{
+        flex-direction: column;
+        height: 210px;
+    }
+    nav{
+        height: 30px;
+    }
+    .krepselis{
+        margin-top: 1px;
+        width: 100%;
+    }
+    .pavadinimas{
+        width: 100%;
+        height: 90px;
+    }
+
+}
+@media screen and (max-width: 1100px) {
+    .preke{
+        flex-direction: column;
+    }
+    .fotke{
+        width: 100%;
+        padding-top: 20px;
+    }
+    main{
+        height: auto;
+        min-height: 725px;
+    }
+    .preke{
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 90px;
+    }
+    .informacija h2{
+        margin-top: 20px;
+    }
+    .informacija{
+        padding-bottom: 20px;
+        min-width: 100px;
+        border-radius: 20px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
